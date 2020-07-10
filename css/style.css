@@ -161,7 +161,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 @media(max-width: 768px){
 	.home .home_header_row .home__logo .navbar__logo{
-		margin-left: 16px;
+		margin-left: 12px;
 	}
 }
 
@@ -463,8 +463,11 @@ h1,h2,h3,h4,h5,h6,p{
     bottom: 24px;
 }
 @media(max-width: 480px){
+	.jumbotron_Mobile .jumbotron_image_text{
+		font-size: 48px ;
+	}
     .owl-theme .owl-dots {
-        bottom: 8px;
+        bottom: 16px;
     }
 }
 .owl-theme .owl-dots .owl-dot {
