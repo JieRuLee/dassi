@@ -71,16 +71,17 @@ h1,h2,h3,h4,h5,h6,p{
 	font-weight: 500;
 	letter-spacing: 0;
 	text-decoration: none;
-	color: #99c24d;
-	border: 2px solid #99c24d;
+	color: #464646;
+	border: 1px solid #cfcfcf;
 	outline: none;
-	
+	background: #fff;
 	cursor: pointer;
 	overflow: hidden;
 	user-select: none;
 	user-drag: none;
 	transition: all 0.3s;
 }
+
 .btn:hover{
 	background-color: #99c24d;
 	color: #fff;
