@@ -87,9 +87,14 @@ h1,h2,h3,h4,h5,h6,p{
 	color: #fff;
 }
 .icon-btn{
+
 	display: inline-block;
 	vertical-align: top;
 	transition: all 0.3s;
+
+}
+.icon-btn img{
+	width: 100%;
 }
 .icon-btn:hover{
 	transform: translateY(-20%);
@@ -242,7 +247,7 @@ h1,h2,h3,h4,h5,h6,p{
 		float: right;
 		width: 100%;
 		width: 20%;
-		
+		padding: 12px;
 	}
 
 	.header .nav__icon-group{ 
@@ -270,7 +275,7 @@ h1,h2,h3,h4,h5,h6,p{
 		margin-top: 6px;
 	}
 	.header .nav__icon-group .icon-btn{
-		padding: 0 12px;
+		padding: 8px 10px;
 	}
 	.header .nav__icon-group i{
 		line-height: 44px;
@@ -1027,7 +1032,13 @@ h1,h2,h3,h4,h5,h6,p{
 ---------------------------*/
 .grid {
 	margin: 0 auto;
-  }
+}
+
+.grid-row {
+	margin: 0 auto;
+	margin-left: -16px;
+	margin-right: -16px;
+}
 .grid-item{
 	width: 33.33333%;
 	padding: 0px 16px;
