@@ -960,6 +960,7 @@ h1,h2,h3,h4,h5,h6,p{
 	overflow: hidden;
 	transition: .3s;
 	transition: .3s;
+	bor
 }
 
 .imgbox__inner{
@@ -991,8 +992,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 .imgbox_circle_Box{
 	display: inline-block ;
-  
-    margin: 0px 5px 0px 0px ;
+	
+	margin: 0px 5px 0px 0px ;
 	position: absolute ;
 	top: -25px;
 	
@@ -1001,6 +1002,8 @@ h1,h2,h3,h4,h5,h6,p{
 	transition: 0.3s;
 	transition-timing-function: ease-out;
 }
+
+
 .circleBox_left{
 	left: calc(50% - 30px);
 }
@@ -1143,6 +1146,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 17px;
 	margin-top: 15px;
 	transition: 0.3s;
+	text-decoration:underline;
 }
 a:hover .portfolio_thumbnail__title{
 	color: #000;
