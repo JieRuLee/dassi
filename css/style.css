@@ -960,7 +960,6 @@ h1,h2,h3,h4,h5,h6,p{
 	overflow: hidden;
 	transition: .3s;
 	transition: .3s;
-	bor
 }
 
 .imgbox__inner{
@@ -989,6 +988,14 @@ h1,h2,h3,h4,h5,h6,p{
 	background-position: center;
 	transition: .7s;
 }
+@media(max-width: 768px){
+	.imgbox__inner.rellax.imgbox__inner .image{
+		width: 150%;
+		height: 150%;
+	}
+}
+
+
 
 .imgbox_circle_Box{
 	display: inline-block ;

@@ -96,9 +96,9 @@
 			</section>
 
 			<section >
-				<div class="imgbox ">
-					<div class="imgbox__inner imgbox__inner-about">
-						<div class="image" style="background-image: url(images/about_us01.jpg);">
+				<div class="imgbox" >
+					<div class="imgbox__inner imgbox__inner-about rellax imgbox__fixed"  data-rellax-speed="-1">
+						<div class="image " style="background-image: url(images/about_us01.jpg);">
 
 						</div>
 					</div>
@@ -133,8 +133,8 @@
 			</section>
 
 			<section >
-				<div class="imgbox ">
-					<div class="imgbox__inner imgbox__inner-about">
+				<div class="imgbox">
+					<div class="imgbox__inner imgbox__inner-about imgbox__fixed rellax" data-rellax-speed="-1">
 						<div class="image" style="background-image: url(images/aboutUs02.jpg);">
 
 						</div>
@@ -187,14 +187,16 @@
 	<!-- JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery.fullpage.min.js"></script>
+	<script src="js/rellax.min.js"></script>
 	<!-- <script src="js/rellax.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script> -->
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
-		// fancybox plugin options
-		$('[data-fancybox]').fancybox({
-			loop : true
+		// rellax plugin options
+
+		var rellax = new Rellax('.rellax',{
+			center: true
 		});
 	</script>
 </body>
