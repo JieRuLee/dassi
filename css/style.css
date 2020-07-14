@@ -637,7 +637,7 @@ h1,h2,h3,h4,h5,h6,p{
 	min-width: 585px;
 	max-width: 585px;
 	flex: 50%;
-	margin: 40px 0px 0px 0px;
+
 }
 
 @media(max-width: 1200px){
@@ -658,6 +658,7 @@ h1,h2,h3,h4,h5,h6,p{
 		flex: 100%;
 	}
 	.si-wrap{
+		margin: 40px 0px 0px 0px;
 		min-width: 100%;
 		right: 0px;
 		flex: 100%;
