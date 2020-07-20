@@ -15,12 +15,12 @@
 }
 @media (min-width: 768px) {
   .container_page {
-    width: 750px;
+    width: 782px;
   }
 }
 @media (min-width: 992px) {
   .container_page {
-    width: 970px;
+    width: 1002px;
   }
 }
 @media (min-width: 1200px) {
