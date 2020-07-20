@@ -18,13 +18,13 @@
 
 @media (min-width: 769px) {
   .container {
-      max-width: 782px;
+      max-width: 752px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-      max-width: 1002px;
+      max-width: 972px;
   }
 }
 
