@@ -7,28 +7,6 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- .container_page {
-  padding-right: 16px;
-  padding-left: 16px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container_page {
-    width: 782px;
-  }
-}
-@media (min-width: 992px) {
-  .container_page {
-    width: 1002px;
-  }
-}
-@media (min-width: 1200px) {
-  .container_page {
-    width: 1172px;
-  }
-}
-
 
 
 .container {
@@ -40,13 +18,13 @@
 
 @media (min-width: 769px) {
   .container {
-      width: 750px;
+      max-width: 782px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-      width: 970px;
+      max-width: 1002px;
   }
 }
 
