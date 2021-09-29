@@ -15,10 +15,28 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<script>
+		function init(){
+			let $btns = $('.project-area .button-group button');
+			$btns.click(function (e) {
+
+				$('.project-area .button-group button').removeClass('active');
+				e.target.classList.add('active');
+
+				let selector = $(e.target).attr('data-filter');
+				$('.project-area .grid').isotope({
+					filter: selector
+				});
+
+				return false;
+			})
+		}
+	
+	</script>
 
 </head>
 
-<body>
+<body onload="init()">
 	<div class="wrapper_page">
 
 		<!-- Start header -->
@@ -433,42 +451,13 @@
 
 
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="./js/isotope.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<!-- <script src="js/masonry.js"></script> -->
-	<script src="./js/isotope.min.js"></script>
+	<script src="js/custom.js"></script>
+	
 
-	<script>
-		// var elem = document.querySelector('.grid');
-		// var msnry = new Masonry(elem, {
-		// 	// options
-		// 	itemSelector: '.grid-item',
-
-		// });
-
-		let $btns = $('.project-area .button-group button');
-
-
-		$btns.click(function (e) {
-
-			$('.project-area .button-group button').removeClass('active');
-			e.target.classList.add('active');
-
-			let selector = $(e.target).attr('data-filter');
-			$('.project-area .grid').isotope({
-				filter: selector
-			});
-
-			return false;
-		})
-
-		$('.project-area .button-group #btn1').trigger('click');
-
-		$('.project-area .grid .test-popup-link').magnificPopup({
-			type: 'image',
-			gallery: { enabled: true }
-		});
-
-	</script>
+	
 
 </body>
 
