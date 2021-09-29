@@ -14,10 +14,23 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<script>
+		function init() {
+			var elem = document.querySelector('.grid');
+			var msnry = new Masonry(elem, {
+				// options
+				itemSelector: '.grid-item',
+
+			});
+
+
+		}
+
+	</script>
 
 </head>
 
-<body>
+<body onload="init()">
 	<div class="wrapper_page">
 
 		<!-- Start header -->
@@ -71,7 +84,7 @@
 				<h1 class="info__subtitle">精選作品</h1>
 				<div class="grid-row">
 					<div class="grid">
-						
+
 						<div class="grid-item gallery_product filter villa">
 							<div class="portfolio_thumbnail">
 								<div class="imgbox">
@@ -178,7 +191,7 @@
 									</div>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="grid-item gallery_product filter villa">
 							<div class="portfolio_thumbnail">
 								<div class="imgbox">
@@ -328,7 +341,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="grid-item gallery_product filter villa">
 							<div class="portfolio_thumbnail">
 								<div class="imgbox">
@@ -406,12 +419,12 @@
 
 					</div>
 				</div>
-			
+
 			</div>
 		</div>
 
 
-	
+
 
 
 
@@ -431,20 +444,7 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/masonry.js"></script>
 
-	<script>
-		var elem = document.querySelector('.grid');
-		var msnry = new Masonry(elem, {
-			// options
-			itemSelector: '.grid-item',
 
-		});
-
-
-
-	
-
-
-	</script>
 
 </body>
 
